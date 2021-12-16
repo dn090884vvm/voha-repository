@@ -1,4 +1,47 @@
-body {
+/* body {
     background-color: #fff;
     color: red;
+} */
+
+/* .new {
+  background-color: blue;
+}
+
+.classy {
+  background-color: DodgerBlue;
+} */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.alert {
+  --alert-text-color: black;
+
+  color: var(--alert-text-color);
+}
+.alert.success {
+  --alert-text-color: green;
+}
+.alert.warning {
+  --alert-text-color: orange;
+}
+
+.alert.error {
+  --alert-text-color: red;
+}
+
+.alert {
+  --alert-text-color: black;
+  --alert-accent-color: tomato;
+}
+
+.alert-text {
+  color: var(--alert-text-color);
+  border: 1px solid var(--alert-accent-color);
+}
+
+.alert-icon {
+  background-color: var(--alert-accent-color);
 }
