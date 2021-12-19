@@ -1,47 +1,44 @@
-/* body {
-    background-color: #fff;
-    color: red;
-} */
-
-/* .new {
-  background-color: blue;
+* {
+  box-sizing: border-box;
 }
-
-.classy {
-  background-color: DodgerBlue;
-} */
 
 body {
   font-family: sans-serif;
   line-height: 1.5;
+  background-color: #edf2f7;
 }
 
-.alert {
-  --alert-text-color: black;
-
-  color: var(--alert-text-color);
-}
-.alert.success {
-  --alert-text-color: green;
-}
-.alert.warning {
-  --alert-text-color: orange;
-}
-
-.alert.error {
-  --alert-text-color: red;
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 400px;
+  margin: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
-.alert {
-  --alert-text-color: black;
-  --alert-accent-color: tomato;
+.card > .content {
+  flex-grow: 1;
+
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px dashed tomato;
+  border-radius: 4px;
 }
 
-.alert-text {
-  color: var(--alert-text-color);
-  border: 1px solid var(--alert-accent-color);
+.card > .meta {
+  padding: 10px;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  border-radius: 4px;
 }
 
-.alert-icon {
-  background-color: var(--alert-accent-color);
+.container {
+  display: flex;
+  justify-content: center;
+  margin: -8px;
 }
