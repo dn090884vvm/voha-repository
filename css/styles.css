@@ -86,7 +86,9 @@ ul {
   margin: 0 auto;
   outline: 2px solid tomato;
 }
-
+.vis {
+  outline: 2px solid tomato;
+}
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
